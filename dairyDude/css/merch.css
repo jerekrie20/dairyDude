@@ -1,0 +1,187 @@
+header {
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+header h1 {
+  color: #da7d1d;
+}
+
+section {
+  margin-bottom: 3em;
+  /* Add a black background color to the top navigation */
+  /* Style the links inside the navigation bar */
+  /* Change the color of links on hover */
+  /* Add a color to the active/current link */
+}
+section .mobile_nav {
+  display: none;
+  /* Style the navigation menu */
+  /* Style the active link (or home/logo) */
+}
+section .mobile_nav .mobilenav {
+  overflow: hidden;
+  background-color: #4fb4d2;
+  position: relative;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  /* Style navigation menu links */
+  /* Style the hamburger menu */
+  /* Add a grey background color on mouse-over */
+}
+section .mobile_nav .mobilenav #myLinks {
+  display: none;
+}
+section .mobile_nav .mobilenav a {
+  color: white;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+section .mobile_nav .mobilenav .a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+section .mobile_nav .mobilenav .a:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+section .mobile_nav .active {
+  background-color: #04AA6D;
+  color: #da7d1d;
+}
+section .topnav {
+  position: relative;
+  background-color: #4fb4d2;
+  overflow: hidden;
+}
+section .center {
+  margin-left: 37%;
+}
+section .topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+section .topnav a:hover {
+  background-color: #da7d1d;
+  color: black;
+}
+section .topnav a.active {
+  color: #ffc300;
+}
+
+@media screen and (max-width: 360px) {
+  section .topnav {
+    display: none;
+  }
+  section .mobile_nav {
+    display: block;
+  }
+}
+.productListed {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5em;
+}
+.productListed .merchBlock {
+  width: calc(100% / 6);
+  display: inline-block;
+  margin: 0 0.5rem;
+  border: 2px solid #4fb4d2;
+  padding: 1rem;
+  color: #000000;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.productListed .merchImage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+.productListed .merchName {
+  font-size: large;
+  margin: 1rem 0 0.5rem;
+}
+.productListed .merchDesc {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: 0;
+}
+.productListed .merchPrice {
+  font-size: larger;
+  color: #00f;
+  margin: 0.5rem 0;
+}
+.productListed form table {
+  margin: auto;
+  margin-bottom: 1em;
+}
+.productListed form table tr {
+  font-size: 16px;
+}
+.productListed form table tr td:nth-child(1) {
+  color: #da7d1d;
+  font-size: 18px;
+  text-align: center;
+}
+.productListed .card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.productListed .card button:hover {
+  opacity: 0.7;
+}
+
+article h2 {
+  margin-left: 2em;
+  margin-bottom: 2em;
+  color: #4fb4d2;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 360px) {
+  article h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+  article .productListed .card {
+    margin-bottom: 0.5em;
+  }
+
+  .productListed {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5em;
+  }
+  .productListed .merchBlock {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}

@@ -1,0 +1,285 @@
+header {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    .headerWords {
+        width: 40em;
+        .words {
+            margin-top: 10em;
+            h2 {
+                color: #da7d1d;
+                text-align: left;
+            }
+            p {
+                margin-top: 2em;
+                margin-left: 1em;
+                color: black;
+                span {
+                    color: #da7d1d;
+                    font-weight: bold;
+                }
+            }
+            .orderButton {
+                margin-left: 2em;
+                margin-top: 2em;
+                border: none;
+                background-color: #7966a2;
+                padding: .5em 2em;
+                border-radius: 10px;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+    .blockImage {
+        background-color: #4fb4d2;
+        padding: 7em;
+        border-bottom-left-radius: 100px;
+        .phone {
+            border: 10px solid white;
+            border-radius: 37px;
+        }
+        .phoneBlock {
+            background-color: white;
+            z-index: 100;
+            position: absolute;
+            right: 36.4125em;
+            top: 16.2375em;
+            width: 6.25em;
+            height: 1.25em;
+            border-radius: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header {
+        margin-top: 2em;
+        margin-bottom: 5em;
+        .headerWords {
+            width: 100%;
+            .words {
+                margin-top: 1em;
+                h2 {
+                    text-align: center;
+                }
+                p {
+                    margin-left: 0;
+                    text-align: center;
+                }
+                .orderButton {
+                    margin-left: 6.5em;
+                    margin-top: 2em;
+                }
+            }
+        }
+        .blockImage {
+            display: none;
+        }
+    }
+}
+
+section {
+    margin-bottom: 5em;
+    h1 {
+        margin-bottom: 2em;
+        text-align: center;
+        color: #4fb4d2;
+    }
+    .col-5 {
+        width: 500px;
+    }
+    .col-6 {
+        width: 6 00px;
+    }
+    .bigImage {
+        margin-right: 2em;
+        margin-left: 20%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .thumbnail {
+        width: 700px;
+    }
+    .slideshow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section {
+        margin-bottom: 5em;
+        .box {}
+        h1 {
+            margin-bottom: 2em;
+            text-align: center;
+            color: #4fb4d2;
+        }
+        .col-5 {
+            width: 100%;
+            display: none;
+        }
+        .col-6 {
+            display: none;
+            margin-top: 1em;
+            width: 100%;
+        }
+        .bigImage {
+            margin-right: .5em;
+            margin-left: .5em;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .thumbnail {
+            width: 700px;
+        }
+        .slideshow {
+            display: block;
+        }
+    }
+}
+
+.youtubeVideo {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    iframe {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .youtubeVideo {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        iframe {
+            width: 90%;
+            height: auto;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    }
+}
+
+article {
+    background-color: #da7d1d;
+    .flavorbox {
+        width: 70em;
+        margin: auto;
+        margin-bottom: 5em;
+        padding-bottom: 3em;
+    }
+    h1 {
+        text-align: center;
+        padding-top: 1em;
+        margin-bottom: 1em;
+    }
+    .flavorCard {
+        width: 100%;
+        background-color: #4fb4d2;
+        .row {
+            div:nth-child(1) {
+                display: none;
+            }
+        }
+        .col-6 {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            h2 {
+                margin-top: 2em;
+                text-align: center;
+                color: white;
+            }
+            p {
+                text-align: center;
+                margin-top: 2em;
+            }
+            img {
+                width: 75%;
+                height: auto;
+            }
+            .orderButton {
+                margin-left: 11em;
+                margin-top: 2em;
+                text-align: center;
+                border: none;
+                background-color: #7966a2;
+                padding: .5em 2em;
+                border-radius: 10px;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    article {
+        .flavorbox {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 5em;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .flavorCard {
+            .row {
+                div:nth-child(1) {
+                    display: block;
+                }
+            }
+            div:nth-child(3) {
+                display: none;
+            }
+            width: 100%;
+            background-color: #4fb4d2;
+            .col-6 {
+                width: 100%;
+                padding-top: 0;
+                padding-bottom: 1em;
+                h2 {
+                    margin-top: 0;
+                    text-align: center;
+                    color: white;
+                }
+                p {
+                    text-align: center;
+                    margin-top: 2em;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .orderButton {
+                    margin-left: 6.8em;
+                    margin-top: 1em;
+                    text-align: center;
+                    border: none;
+                    background-color: #7966a2;
+                    padding: .5em 2em;
+                    border-radius: 10px;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

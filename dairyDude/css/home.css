@@ -1,0 +1,275 @@
+header {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: center;
+}
+header .headerWords {
+  width: 40em;
+}
+header .headerWords .words {
+  margin-top: 10em;
+}
+header .headerWords .words h2 {
+  color: #da7d1d;
+  text-align: left;
+}
+header .headerWords .words p {
+  margin-top: 2em;
+  margin-left: 1em;
+  color: black;
+}
+header .headerWords .words p span {
+  color: #da7d1d;
+  font-weight: bold;
+}
+header .headerWords .words .orderButton {
+  margin-left: 2em;
+  margin-top: 2em;
+  border: none;
+  background-color: #7966a2;
+  padding: 0.5em 2em;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+header .blockImage {
+  background-color: #4fb4d2;
+  padding: 7em;
+  border-bottom-left-radius: 100px;
+}
+header .blockImage .phone {
+  border: 10px solid white;
+  border-radius: 37px;
+}
+header .blockImage .phoneBlock {
+  background-color: white;
+  z-index: 100;
+  position: absolute;
+  right: 36.4125em;
+  top: 16.2375em;
+  width: 6.25em;
+  height: 1.25em;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    margin-top: 2em;
+    margin-bottom: 5em;
+  }
+  header .headerWords {
+    width: 100%;
+  }
+  header .headerWords .words {
+    margin-top: 1em;
+  }
+  header .headerWords .words h2 {
+    text-align: center;
+  }
+  header .headerWords .words p {
+    margin-left: 0;
+    text-align: center;
+  }
+  header .headerWords .words .orderButton {
+    margin-left: 6.5em;
+    margin-top: 2em;
+  }
+  header .blockImage {
+    display: none;
+  }
+}
+section {
+  margin-bottom: 5em;
+}
+section h1 {
+  margin-bottom: 2em;
+  text-align: center;
+  color: #4fb4d2;
+}
+section .col-5 {
+  width: 500px;
+}
+section .col-6 {
+  width: 6 0px;
+}
+section .bigImage {
+  margin-right: 2em;
+  margin-left: 20%;
+}
+section .bigImage img {
+  width: 100%;
+  height: auto;
+}
+section .thumbnail {
+  width: 700px;
+}
+section .slideshow {
+  display: none;
+}
+
+@media screen and (max-width: 360px) {
+  section {
+    margin-bottom: 5em;
+  }
+  section h1 {
+    margin-bottom: 2em;
+    text-align: center;
+    color: #4fb4d2;
+  }
+  section .col-5 {
+    width: 100%;
+    display: none;
+  }
+  section .col-6 {
+    display: none;
+    margin-top: 1em;
+    width: 100%;
+  }
+  section .bigImage {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+  section .bigImage img {
+    width: 100%;
+    height: auto;
+  }
+  section .thumbnail {
+    width: 700px;
+  }
+  section .slideshow {
+    display: block;
+  }
+}
+.youtubeVideo {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.youtubeVideo iframe {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 360px) {
+  .youtubeVideo {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .youtubeVideo iframe {
+    width: 90%;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+article {
+  background-color: #da7d1d;
+}
+article .flavorbox {
+  width: 70em;
+  margin: auto;
+  margin-bottom: 5em;
+  padding-bottom: 3em;
+}
+article h1 {
+  text-align: center;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+article .flavorCard {
+  width: 100%;
+  background-color: #4fb4d2;
+}
+article .flavorCard .row div:nth-child(1) {
+  display: none;
+}
+article .flavorCard .col-6 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+article .flavorCard .col-6 h2 {
+  margin-top: 2em;
+  text-align: center;
+  color: white;
+}
+article .flavorCard .col-6 p {
+  text-align: center;
+  margin-top: 2em;
+}
+article .flavorCard .col-6 img {
+  width: 75%;
+  height: auto;
+}
+article .flavorCard .col-6 .orderButton {
+  margin-left: 11em;
+  margin-top: 2em;
+  text-align: center;
+  border: none;
+  background-color: #7966a2;
+  padding: 0.5em 2em;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 360px) {
+  article .flavorbox {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5em;
+  }
+  article h1 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  article .flavorCard {
+    width: 100%;
+    background-color: #4fb4d2;
+  }
+  article .flavorCard .row div:nth-child(1) {
+    display: block;
+  }
+  article .flavorCard div:nth-child(3) {
+    display: none;
+  }
+  article .flavorCard .col-6 {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 1em;
+  }
+  article .flavorCard .col-6 h2 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+  }
+  article .flavorCard .col-6 p {
+    text-align: center;
+    margin-top: 2em;
+  }
+  article .flavorCard .col-6 img {
+    width: 100%;
+    height: auto;
+  }
+  article .flavorCard .col-6 .orderButton {
+    margin-left: 6.8em;
+    margin-top: 1em;
+    text-align: center;
+    border: none;
+    background-color: #7966a2;
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

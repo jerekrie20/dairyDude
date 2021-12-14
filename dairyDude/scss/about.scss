@@ -1,0 +1,56 @@
+header {
+    text-align: center;
+    margin-top: 5em;
+    h1 {
+        margin-bottom: 1em;
+        color: #4fb4d2;
+    }
+    P {
+        margin-left: 25%;
+        margin-bottom: 3em;
+        line-height: 3;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header {
+        text-align: center;
+        margin-top: 5em;
+        h1 {
+            margin-bottom: 1em;
+            color: #4fb4d2;
+        }
+        P {
+            margin-left: 1em;
+            margin-bottom: 3em;
+            line-height: 3;
+            width: 90%;
+        }
+    }
+}
+
+section {
+    text-align: center;
+    h1 {
+        color: #4fb4d2;
+    }
+    .card-deck {
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 5em;
+        width: 65%;
+        .card {
+            border-radius: 20px;
+            border: none;
+            .card-img-top {
+                width: 100%;
+            }
+            .card-footer {
+                .fab {
+                    margin-right: 1em;
+                }
+            }
+        }
+    }
+}

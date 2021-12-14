@@ -1,0 +1,255 @@
+nav {
+    .row {
+        width: 100%;
+    }
+    .col-2 {
+        display: flex;
+        justify-content: center;
+        //nav bar
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #4fb4d2;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color: #da7d1d;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .dropdown span {
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+        //end
+        //shopping cart
+        .fas {
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+        }
+        .fas:hover {
+            color: #da7d1d;
+        }
+        .fa-shopping-cart,
+        .fa-user {
+            margin-top: .2em;
+        }
+        img:hover {
+            color: #da7d1d;
+        }
+        //end
+    }
+    .col-5 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        h4 {
+            color: white;
+        }
+    }
+    @media screen and (max-width: 360px) {
+        .row {
+            width: 100%;
+        }
+    }
+}
+
+footer {
+    .banner {
+        background-color: #ffc300;
+        .row {
+            padding: 2em;
+            .col-4 {
+                h5 {
+                    text-align: left;
+                    width: 19em;
+                }
+            }
+            .col-5 {
+                form {
+                    input[type="email"] {
+                        border: none;
+                        border-radius: 10px;
+                        padding-top: .9em;
+                        padding-bottom: .9em;
+                        padding-left: 2em;
+                        padding-right: 2em;
+                    }
+                    input[type="submit"] {
+                        border: none;
+                        border-radius: 10px;
+                        padding-top: .5em;
+                        padding-bottom: .5em;
+                        padding-left: 1.5em;
+                        padding-right: 1.5em;
+                        color: white;
+                        text-align: center;
+                        background-color: #7966a2;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                     ::placeholder {
+                        text-align: left;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        background-color: #7966a2;
+        padding-top: 2em;
+        .col-1 {
+            color: white;
+        }
+        i {
+            margin-top: 2em;
+            display: block;
+            text-align: center;
+            .fab .fa-twitter {
+                font-size: 16px;
+            }
+        }
+        div:nth-child(9) {
+            display: none;
+        }
+        .menu {
+            h3 {
+                color: white;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                margin-right: .5em;
+            }
+        }
+        .contactUs {
+            h3 {
+                color: white;
+            }
+            h4 {
+                color: white;
+                span {
+                    display: block;
+                    font-size: 16px;
+                    width: 200px;
+                    margin-top: .5em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    footer {
+        .banner {
+            .row {
+                padding-top: 1.5em;
+                .col-2 {
+                    display: none;
+                }
+                .col-4 {
+                    width: 100%;
+                    h5 {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+                .col-5 {
+                    width: 100%;
+                    form {
+                        margin-left: 3em;
+                        input[type="email"] {
+                            border-radius: 10px;
+                            padding-top: .5em;
+                            padding-bottom: .5em;
+                            padding-left: 1em;
+                            padding-right: 0;
+                            margin-top: .5em;
+                        }
+                        input[type="submit"] {
+                            padding-left: 1em;
+                            padding-right: 1em;
+                            font-size: 16px;
+                            margin-top: .5em;
+                            margin-left: 2.5em;
+                        }
+                         ::placeholder {
+                            text-align: left;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-footer {
+            .row {
+                div:nth-child(1) {
+                    display: none;
+                }
+            }
+            div:nth-child(2) {
+                display: none;
+            }
+            div:nth-child(3) {
+                display: none;
+            }
+            div:nth-child(4) {
+                display: none;
+            }
+            div:nth-child(6) {
+                display: none;
+            }
+            div:nth-child(7),
+            div:nth-child(8) {
+                display: none;
+            }
+            .col-2 {
+                width: 40%;
+                color: white;
+            }
+            .contactUs {
+                margin-left: 2em;
+                h3 {
+                    color: white;
+                    display: none;
+                }
+                h4 {
+                    color: white;
+                    span {
+                        display: block;
+                        font-size: 16px;
+                        width: 150px;
+                        margin-top: .5em;
+                    }
+                }
+            }
+            div:nth-child(9) {
+                display: block;
+                margin-left: 2em;
+            }
+        }
+    }
+}

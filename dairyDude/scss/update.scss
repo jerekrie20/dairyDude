@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 45px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(121, 102, 162, 1);
+    .title {
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+        color: #da7d1d;
+    }
+    .content {
+        form {
+            .user-details {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0 12px 0;
+                .input-box {
+                    margin-bottom: 15px;
+                    width: calc(100% / 2 - 20px);
+                    span {
+                        .details {
+                            display: block;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    input {
+                        height: 45px;
+                        width: 100%;
+                        outline: none;
+                        font-size: 16px;
+                        border-radius: 5px;
+                        padding-left: 15px;
+                        border: 1px solid #4fb4d2;
+                        border-bottom-width: 2px;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+            .button {
+                height: 45px;
+                margin: 35px 0;
+                input[type="submit"] {
+                    margin-bottom: 1em;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                    border: none;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    background: linear-gradient(135deg, #4fb4d2, #7966a2);
+                }
+                input[type="reset"] {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                    border: none;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    background: linear-gradient(135deg, #7966a2, #4fb4d2);
+                }
+            }
+        }
+    }
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 40px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #7966a2, #4fb4d2);
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+form .button input:hover {
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #7966a2, #4fb4d2);
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        max-width: 100%;
+        .title {
+            font-size: 1.5em;
+        }
+        .content {
+            form {
+                .user-details {
+                    flex-direction: column;
+                    .input-box {
+                        margin-bottom: 15px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.updateResult {
+    color: #4fb4d2;
+    text-align: center;
+    a {
+        .button2 {
+            border: none;
+            margin-bottom: 5em;
+            margin-right: 1em;
+            margin-top: 5em;
+            background-color: #7966a2;
+            border-radius: 10px;
+            padding: .4em .4em;
+            color: #da7d1d;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .button3 {
+            border: none;
+            background-color: #da7d1d;
+            border-radius: 10px;
+            padding: .4em .7em;
+            color: #7966a2;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}

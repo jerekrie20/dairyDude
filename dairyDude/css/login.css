@@ -1,0 +1,109 @@
+.loginBlock {
+  margin-top: 5em;
+  margin-bottom: 10em;
+  text-align: center;
+}
+.loginBlock h3 {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 18px;
+  color: red;
+}
+.loginBlock form {
+  text-align: center;
+}
+.loginBlock form p {
+  margin: 1.5em;
+}
+.loginBlock form .form-control {
+  margin: auto;
+  width: 15%;
+}
+.loginBlock form input[type=submit] {
+  border: none;
+  margin-right: 1em;
+  background-color: #7966a2;
+  border-radius: 10px;
+  padding: 0.4em 0.4em;
+  color: #da7d1d;
+  font-size: 18px;
+  font-weight: bold;
+}
+.loginBlock form input[type=reset] {
+  border: none;
+  background-color: #da7d1d;
+  border-radius: 10px;
+  padding: 0.4em 0.7em;
+  color: #7966a2;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 360px) {
+  .loginBlock h3 {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 16px;
+    color: red;
+  }
+  .loginBlock form {
+    text-align: center;
+  }
+  .loginBlock form p {
+    margin: 1.5em;
+  }
+  .loginBlock form .form-control {
+    margin: auto;
+    width: 100%;
+  }
+}
+.validUser {
+  text-align: center;
+  margin-bottom: 5em;
+}
+.validUser h2 {
+  margin-top: 2em;
+}
+.validUser h3 {
+  text-align: center;
+  margin-top: 5em;
+  font-size: 18px;
+  color: #da7d1d;
+}
+.validUser .list-group {
+  margin: auto;
+  margin-top: 2.5em;
+  width: 50%;
+}
+.validUser .list-group-item {
+  background-color: #7966a2;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+.validUser a .fa-solid {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 360px) {
+  .validUser h3 {
+    margin-top: 4em;
+    width: 98%;
+  }
+  .validUser .list-group {
+    margin: auto;
+    margin-top: 2.5em;
+    width: 70%;
+  }
+  .validUser .list-group-item {
+    background-color: #7966a2;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+  }
+  .validUser a .fa-solid {
+    font-size: 18px;
+  }
+}

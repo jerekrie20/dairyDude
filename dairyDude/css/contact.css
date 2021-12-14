@@ -1,0 +1,111 @@
+header {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+header img {
+  position: absolute;
+  top: -50em;
+  left: -0.5em;
+  z-index: -1;
+  width: 90%;
+  height: auto;
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    text-align: center;
+  }
+  header img {
+    position: absolute;
+    top: -6em;
+    left: 0.5em;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+  }
+}
+section {
+  margin-bottom: 5em;
+}
+section .form-div {
+  margin-bottom: 5em;
+  padding-bottom: 2em;
+  background-color: #4fb4d2;
+  border-radius: 1em;
+  width: 55%;
+  margin: auto;
+  height: auto;
+}
+section .form-div .circle {
+  margin-left: 46%;
+}
+section .form-div .circle img {
+  width: 120px;
+  height: auto;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+}
+section .form-div form {
+  margin-top: 2em;
+  text-align: center;
+}
+section .form-div form .home_address {
+  display: none;
+}
+section .form-div form p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+section .form-div form p .form-control,
+section .form-div form p .form-select {
+  margin: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 360px) {
+  section {
+    margin-bottom: 5em;
+  }
+  section .form-div {
+    width: 90%;
+  }
+  section .form-div .circle {
+    margin-left: 7.2em;
+  }
+  section .form-div .circle img {
+    width: 100px;
+    height: auto;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+  section .form-div form {
+    margin-top: 2em;
+    text-align: center;
+  }
+  section .form-div form p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  section .form-div form p .form-control,
+section .form-div form p .form-select {
+    margin: auto;
+    width: 80%;
+  }
+}
+.emailBlock {
+  text-align: center;
+}
+.emailBlock h1 {
+  color: #4fb4d2;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.emailBlock h3 {
+  margin-bottom: 3em;
+}
+.emailBlock h4 {
+  color: #7966a2;
+}

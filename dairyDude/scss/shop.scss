@@ -1,0 +1,174 @@
+header {
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    h1 {
+        color: #da7d1d;
+    }
+}
+
+section {
+    .mobile_nav {
+        display: none;
+        /* Style the navigation menu */
+        .mobilenav {
+            overflow: hidden;
+            background-color: #4fb4d2;
+            position: relative;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            /* Hide the links inside the navigation menu (except for logo/home) */
+            #myLinks {
+                display: none;
+            }
+            /* Style navigation menu links */
+            a {
+                color: white;
+                padding: 2px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
+            /* Style the hamburger menu */
+            .a.icon {
+                background: black;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            /* Add a grey background color on mouse-over */
+            .a:hover {
+                background-color: #ddd;
+                text-decoration: none;
+            }
+        }
+        /* Style the active link (or home/logo) */
+        .active {
+            background-color: #04AA6D;
+            color: #da7d1d;
+        }
+    }
+    /* Add a black background color to the top navigation */
+    .topnav {
+        position: relative;
+        background-color: #4fb4d2;
+        overflow: hidden;
+    }
+    .center {
+        margin-left: 37%;
+    }
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #da7d1d;
+        color: black;
+    }
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        color: #ffc300;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section {
+        .topnav {
+            display: none;
+        }
+        .mobile_nav {
+            display: block;
+        }
+    }
+}
+
+article {
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    h1 {
+        color: #da7d1d;
+    }
+    p {
+        color: #7966a2;
+        span {
+            color: #4fb4d2;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
+}
+
+.sale {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+    .item_image {
+        margin-left: 10em;
+        .thumbnail {
+            img {
+                margin-top: .5em;
+            }
+        }
+    }
+    .item_description {
+        h2 {
+            text-align: center;
+            margin-top: 2em;
+            color: #da7d1d;
+            font-weight: bold;
+        }
+        P {
+            margin-left: 2em;
+            margin-top: 2em;
+            width: 90%;
+            font-size: 1.1em;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .sale {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5em;
+        .item_image {
+            width: 100%;
+            margin-left: 2em;
+            img {
+                width: 90%;
+                height: auto;
+            }
+            .thumbnail {
+                display: none;
+                img {
+                    margin-top: .5em;
+                }
+            }
+        }
+        .item_description {
+            h2 {
+                text-align: center;
+                margin-top: 2em;
+                color: #da7d1d;
+                font-weight: bold;
+            }
+            P {
+                margin-left: 1em;
+                margin-top: 2em;
+                width: 90%;
+                font-size: 1.1em;
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+header {
+    h1 {
+        color: #da7d1d;
+        text-align: center;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+}
+
+.productListed {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 10em;
+    .merchBlock {
+        width: calc(100% / 6);
+        display: inline-block;
+        margin: 0 .5rem;
+        border: 2px solid #4fb4d2;
+        margin-bottom: 2em;
+        padding: 1rem;
+        color: #000000;
+        border-radius: 10px;
+        font-size: .875rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .merchImage img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .25em;
+        width: 100%;
+        height: auto
+    }
+    .merchName {
+        font-size: large;
+        margin: 1rem 0 .5rem;
+        margin-bottom: .25em;
+    }
+    .merchDesc {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin: 0;
+        margin-bottom: .25em;
+    }
+    .merchPrice {
+        font-size: larger;
+        color: #4fb4d2;
+        margin: .5rem 0;
+        margin-bottom: .25em;
+    }
+    button {
+        border: none;
+        background-color: #7966a2;
+        border-radius: 10px;
+        padding: .5em 2em;
+        color: #da7d1d;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+    .updateButton {
+        border: none;
+        background-color: #da7d1d;
+        border-radius: 10px;
+        padding: .5em 2em;
+        color: #7966a2;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    form {
+        .userInput {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .productListed {
+        display: flex;
+        flex-direction: column;
+        .merchBlock {
+            width: 100%;
+            margin-bottom: 2em;
+        }
+    }
+}
+
+.deleteResult {
+    color: #4fb4d2;
+    text-align: center;
+    a {
+        .button2 {
+            border: none;
+            margin-bottom: 5em;
+            margin-right: 1em;
+            margin-top: 5em;
+            background-color: #7966a2;
+            border-radius: 10px;
+            padding: .4em .4em;
+            color: #da7d1d;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .button3 {
+            border: none;
+            background-color: #da7d1d;
+            border-radius: 10px;
+            padding: .4em .7em;
+            color: #7966a2;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
